@@ -3,11 +3,13 @@ body {
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
-    background-color: rgb(35, 45, 63);
+    background-color: #24313a;
 }
 
 .text {
     text-align: center;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
 }
 
 header {
@@ -16,15 +18,45 @@ header {
     justify-content: space-between;
     padding-left: 1em;
     padding-right: 1em;
-    background-color: rgb(15, 9, 37);
+    background-color: #131922;
     margin-bottom: 2em;
+}
+
+.add-btn {
+    border-radius: 10px;
+    height: 25px;
+    width: 50px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    outline: 3px solid #85ff81;
+}
+
+.add-btn:hover {
+    outline: 4px solid #85ff81;
 }
 
 .task-list-container input {
     border-radius: 10px;
-    border: none;
-    outline: none;
+    height: 25px;
     width: 250px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    outline: 3px solid #85ff81;
+}
+
+.task-list-container input::placeholder {
+    color: white;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+.task-list-container input:hover {
+    outline: 4px solid #85ff81;
 }
 
 .task-list-container {
@@ -34,7 +66,7 @@ header {
     flex-direction: column;
     width: 350px;
     height: fit-content;
-    background-color: red;
+    background-color: #131922;
 }
 
 .task-list-header {
@@ -44,7 +76,6 @@ header {
     align-items: center;
     padding-left: 1em;
     padding-right: 1em;
-    background-color: green;
 }
 
 ul li {
@@ -70,7 +101,7 @@ ul li::before {
 }
 
 ul li.checked {
-    color: #68c965;
+    color: #85ff81;
     text-decoration: line-through;
 }
 
@@ -85,12 +116,12 @@ ul li span {
     width: 24px;
     height: 24px;
     font-size: 22px;
-    color: #68c965;
+    color: white;
     line-height: 24px;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 ul li span:hover {
-    background: #edeef0;
+    background: #85ff81;
 }
