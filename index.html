@@ -5,14 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
     <title>Task list proejct - Braydon Schmidt</title>
 </head>
 
 <body>
 
+    <header>
+        <h3>This is a task list project</h3>
+        <h5>Braydon Schmidt</h5>
+    </header>
 
+    <div class="task-list-container">
+        <div class="text">To-Do List</div>
+        <div class="task-list-header">
+            <input id="input-box" type="text" placeholder="Enter your task!">
+            <button onclick="addTask()">ADD</button>
+        </div>
 
+        <ul id="container-list">
+
+        </ul>
+
+    </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
