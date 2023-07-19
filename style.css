@@ -47,10 +47,6 @@ header {
     background-color: green;
 }
 
-ul {
-    /* background-color: rgb(122, 45, 45); */
-}
-
 ul li {
     list-style: none;
     font-size: 14px;
