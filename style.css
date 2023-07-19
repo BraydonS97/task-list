@@ -2,5 +2,99 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
     background-color: rgb(35, 45, 63);
+}
+
+.text {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: rgb(15, 9, 37);
+    margin-bottom: 2em;
+}
+
+.task-list-container input {
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 250px;
+}
+
+.task-list-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: fit-content;
+    background-color: red;
+}
+
+.task-list-header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: green;
+}
+
+ul {
+    /* background-color: rgb(122, 45, 45); */
+}
+
+ul li {
+    list-style: none;
+    font-size: 14px;
+    user-select: none;
+    cursor: pointer;
+    padding: 10px 8px 8px 0px;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: -21px;
+    top: 12.5px;
+}
+
+ul li.checked {
+    color: #68c965;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(images/checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 18px;
+    top: 8px;
+    width: 24px;
+    height: 24px;
+    font-size: 22px;
+    color: #68c965;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+ul li span:hover {
+    background: #edeef0;
 }
