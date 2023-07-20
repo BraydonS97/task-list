@@ -3,7 +3,11 @@ body {
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
-    background-color: rgb(209, 209, 209);
+    background-color: grey;
+}
+
+.dark-mode {
+    background-color: black;
 }
 
 i {
@@ -77,6 +81,7 @@ header {
 .task-list-container {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 25px;
     display: flex;
     flex-direction: column;
     width: 350px;
@@ -94,11 +99,12 @@ header {
 }
 
 ul li {
+    word-wrap: break-word;
     list-style: none;
     font-size: 14px;
     user-select: none;
     cursor: pointer;
-    padding: 10px 8px 8px 0px;
+    padding: 10px 45px 8px 0px;
     position: relative;
 }
 
@@ -117,7 +123,6 @@ ul li::before {
 
 ul li.checked {
     color: #85ff81;
-    text-decoration: line-through;
 }
 
 ul li.checked::before {
