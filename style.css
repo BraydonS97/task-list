@@ -3,11 +3,16 @@ body {
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
-    background-color: grey;
+    background-color: rgb(236, 236, 236);
 }
 
 .dark-mode {
-    background-color: black;
+    background-color: rgb(36, 36, 53);
+}
+
+.dark-mode h3,
+.dark-mode i {
+    color: #85ff81;
 }
 
 i {
@@ -123,6 +128,7 @@ ul li::before {
 
 ul li.checked {
     color: #85ff81;
+    text-decoration: line-through;
 }
 
 ul li.checked::before {
